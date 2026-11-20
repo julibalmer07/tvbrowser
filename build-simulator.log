@@ -1,0 +1,526 @@
+Command line invocation:
+    /Applications/Xcode_27.1.app/Contents/Developer/usr/bin/xcodebuild -project TVBrowser.xcodeproj -target TVBrowser -sdk appletvsimulator -configuration Debug CODE_SIGNING_ALLOWED=NO SYMROOT=/Users/runner/work/tvbrowser/tvbrowser/build build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = appletvsimulator27.0
+    SYMROOT = /Users/runner/work/tvbrowser/tvbrowser/build
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'TVBrowser' in project 'TVBrowser' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch x86_64 -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch x86_64 -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -x c -c /dev/null
+
+Build description signature: 23d49e2562cc49d87aa02aab74739dd8
+Build description path: /Users/runner/work/tvbrowser/tvbrowser/build/XCBuildData/23d49e2562cc49d87aa02aab74739dd8.xcbuilddata
+CreateBuildDirectory /Users/runner/work/tvbrowser/tvbrowser/build
+    cd /Users/runner/work/tvbrowser/tvbrowser/TVBrowser.xcodeproj
+    builtin-create-build-directory /Users/runner/work/tvbrowser/tvbrowser/build
+
+CreateBuildDirectory /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/CompilationCache.noindex
+    cd /Users/runner/work/tvbrowser/tvbrowser/TVBrowser.xcodeproj
+    builtin-create-build-directory /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/CompilationCache.noindex
+
+ClangStatCache /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/SDKStatCaches.noindex/appletvsimulator27.0-24J360-e829b21a6f8c9b70876ba0858053c044bb2bd2b57661a85655e5049b1894cd48.sdkstatcache
+    cd /Users/runner/work/tvbrowser/tvbrowser/TVBrowser.xcodeproj
+    /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -o /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/SDKStatCaches.noindex/appletvsimulator27.0-24J360-e829b21a6f8c9b70876ba0858053c044bb2bd2b57661a85655e5049b1894cd48.sdkstatcache
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser-875b6cf5d6afe16e3d20de598436ea93-VFS-appletvsimulator/all-product-headers.yaml
+    cd /Users/runner/work/tvbrowser/tvbrowser/TVBrowser.xcodeproj
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser-875b6cf5d6afe16e3d20de598436ea93-VFS-appletvsimulator/all-product-headers.yaml
+
+CreateBuildDirectory /Users/runner/work/tvbrowser/tvbrowser/build/SwiftExplicitPrecompiledModules
+    cd /Users/runner/work/tvbrowser/tvbrowser/TVBrowser.xcodeproj
+    builtin-create-build-directory /Users/runner/work/tvbrowser/tvbrowser/build/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/tvbrowser/tvbrowser/build/SharedPrecompiledHeaders
+    cd /Users/runner/work/tvbrowser/tvbrowser/TVBrowser.xcodeproj
+    builtin-create-build-directory /Users/runner/work/tvbrowser/tvbrowser/build/SharedPrecompiledHeaders
+
+CreateBuildDirectory /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules
+    cd /Users/runner/work/tvbrowser/tvbrowser/TVBrowser.xcodeproj
+    builtin-create-build-directory /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/tvbrowser/tvbrowser/build/EagerLinkingTBDs/Debug-appletvsimulator
+    cd /Users/runner/work/tvbrowser/tvbrowser/TVBrowser.xcodeproj
+    builtin-create-build-directory /Users/runner/work/tvbrowser/tvbrowser/build/EagerLinkingTBDs/Debug-appletvsimulator
+
+CreateBuildDirectory /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator
+    cd /Users/runner/work/tvbrowser/tvbrowser/TVBrowser.xcodeproj
+    builtin-create-build-directory /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser.DependencyStaticMetadataFileList (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser.hmap (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser.hmap
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser.DependencyMetadataFileList (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-project-headers.hmap (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-project-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-own-target-headers.hmap (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-generated-files.hmap (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-generated-files.hmap
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-all-target-headers.hmap (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-all-non-framework-target-headers.hmap (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+'-std=gnu17' -fobjc-arc -fobjc-weak -fmodules -gmodules -fpascal-strings -O0 '-DDEBUG=1' '-DOBJC_OLD_DISPATCH_PROTOTYPES=0' -fasm-blocks -g '-fobjc-abi-version=2' -fobjc-legacy-dispatch -iquote /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-generated-files.hmap -I/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-own-target-headers.hmap -I/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-all-target-headers.hmap -iquote /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-project-headers.hmap -I/Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/include -I/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/DerivedSources-normal/x86_64 -I/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/DerivedSources/x86_64 -I/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/DerivedSources -F/Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/TVBrowser.LinkFileList (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/TVBrowser.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+'-std=gnu17' -fobjc-arc -fobjc-weak -fmodules -gmodules -fpascal-strings -O0 '-DDEBUG=1' '-DOBJC_OLD_DISPATCH_PROTOTYPES=0' -g '-fobjc-abi-version=2' -fobjc-legacy-dispatch -iquote /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-generated-files.hmap -I/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-own-target-headers.hmap -I/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-all-target-headers.hmap -iquote /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/TVBrowser-project-headers.hmap -I/Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/include -I/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/DerivedSources-normal/arm64 -I/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/DerivedSources/arm64 -I/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/DerivedSources -F/Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator
+
+WriteAuxiliaryFile /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/TVBrowser.LinkFileList (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    write-file /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/TVBrowser.LinkFileList
+
+MkDir /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    /bin/mkdir -p /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app
+
+ProcessInfoPlistFile /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app/Info.plist /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/Info.plist (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    builtin-infoPlistUtility /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app/PkgInfo -expandbuildsettings -format binary -platform appletvsimulator -o /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app/Info.plist
+
+ScanDependencies /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/BrowserViewController.o /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/BrowserViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    
+    Using response file: /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    builtin-ScanDependencies -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/BrowserViewController.o.scan -- /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/SDKStatCaches.noindex/appletvsimulator27.0-24J360-e829b21a6f8c9b70876ba0858053c044bb2bd2b57661a85655e5049b1894cd48.sdkstatcache -target x86_64-apple-tvos17.0-simulator -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability @/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/BrowserViewController.d --serialize-diagnostics /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/BrowserViewController.dia -c /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/BrowserViewController.m -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/BrowserViewController.o
+
+ScanDependencies /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/main.o /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    
+    Using response file: /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    builtin-ScanDependencies -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/main.o.scan -- /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/SDKStatCaches.noindex/appletvsimulator27.0-24J360-e829b21a6f8c9b70876ba0858053c044bb2bd2b57661a85655e5049b1894cd48.sdkstatcache -target x86_64-apple-tvos17.0-simulator -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability @/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/main.dia -c /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/main.m -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/main.o
+
+ScanDependencies /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/main.o /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/main.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    
+    Using response file: /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    builtin-ScanDependencies -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/main.o.scan -- /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/SDKStatCaches.noindex/appletvsimulator27.0-24J360-e829b21a6f8c9b70876ba0858053c044bb2bd2b57661a85655e5049b1894cd48.sdkstatcache -target arm64-apple-tvos17.0-simulator -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability @/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/main.d --serialize-diagnostics /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/main.dia -c /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/main.m -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/main.o
+
+ScanDependencies /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/BrowserViewController.o /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/BrowserViewController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    
+    Using response file: /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    builtin-ScanDependencies -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/BrowserViewController.o.scan -- /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/SDKStatCaches.noindex/appletvsimulator27.0-24J360-e829b21a6f8c9b70876ba0858053c044bb2bd2b57661a85655e5049b1894cd48.sdkstatcache -target arm64-apple-tvos17.0-simulator -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability @/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/BrowserViewController.d --serialize-diagnostics /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/BrowserViewController.dia -c /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/BrowserViewController.m -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/BrowserViewController.o
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdarg-4GNPPAEDER2GUAGF1BS0YIUT8.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdarg-4GNPPAEDER2GUAGF1BS0YIUT8.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ptrauth-1KRIY6BI6ORTNL20NNJVG5N5.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ptrauth-1KRIY6BI6ORTNL20NNJVG5N5.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stddef-BBNKHWCA1QY4V7P8BKKMBAQNB.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stddef-BBNKHWCA1QY4V7P8BKKMBAQNB.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ptrauth-5XUEZ0KV44U03Y7YB75YHOKDY.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ptrauth-5XUEZ0KV44U03Y7YB75YHOKDY.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_AvailabilityInternal-60SYVFGDPJAMS5RF5YHW9YZ8C.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_AvailabilityInternal-60SYVFGDPJAMS5RF5YHW9YZ8C.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdbool-6QTBNWZ1A3LKOVHEJ3VU0MZ7L.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdbool-6QTBNWZ1A3LKOVHEJ3VU0MZ7L.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdbool-7BOHIEXQPK52BPX0CMLERSG89.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdbool-7BOHIEXQPK52BPX0CMLERSG89.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ptrcheck-D1HN55GXF9GVZ2BMD93KI7A5K.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ptrcheck-D1HN55GXF9GVZ2BMD93KI7A5K.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_float-W6WXFOUA081RUUP6H4H3XIVL.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_float-W6WXFOUA081RUUP6H4H3XIVL.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ptrcheck-D5C3WYNMRZMKFOVJX2FPL0DAA.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ptrcheck-D5C3WYNMRZMKFOVJX2FPL0DAA.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stddef-8VH406C9H8OEPYWLZK5HNXTYQ.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stddef-8VH406C9H8OEPYWLZK5HNXTYQ.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_AvailabilityInternal-E5H3FPXG043N373DLHYR5MMLM.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_AvailabilityInternal-E5H3FPXG043N373DLHYR5MMLM.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_float-EDD0LRNL6NIM1MRNAUUYB7SDP.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_float-EDD0LRNL6NIM1MRNAUUYB7SDP.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdarg-4P4CNR397CHWFHZ7FFWNUR4SB.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdarg-4P4CNR397CHWFHZ7FFWNUR4SB.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation1-DHPLG6AY3D352LFFM606GJM00.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation1-DHPLG6AY3D352LFFM606GJM00.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation1-95QCFCR9KYPQFE7P3PSDD3D6F.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation1-95QCFCR9KYPQFE7P3PSDD3D6F.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation2-48IM8CGB8TLBOJAHHJCK1W76B.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation2-48IM8CGB8TLBOJAHHJCK1W76B.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_limits-1HYY73MZFOYGCAXTZKLP3ITRB.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_limits-1HYY73MZFOYGCAXTZKLP3ITRB.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation2-CA10IY5A35UQQ059IJ6TOH5JJ.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation2-CA10IY5A35UQQ059IJ6TOH5JJ.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_limits-3OHGM9C9LPWDL59GCN1RCZV55.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_limits-3OHGM9C9LPWDL59GCN1RCZV55.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdint-ELOWYZHISEHSY8DEV0MRCZDJV.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdint-ELOWYZHISEHSY8DEV0MRCZDJV.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdint-6N30U46V49U85K6TEVOH5UTV8.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_stdint-6N30U46V49U85K6TEVOH5UTV8.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation3-2A7I2VWHL7EJDP4UBWCWDJMZV.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation3-2A7I2VWHL7EJDP4UBWCWDJMZV.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation3-BJD01JHLLFT49U1BZA73ZLJAU.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_DarwinFoundation3-BJD01JHLLFT49U1BZA73ZLJAU.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_inttypes-1RAHFBQ4IUBE1QDCD0PXZU7FV.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_inttypes-1RAHFBQ4IUBE1QDCD0PXZU7FV.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_inttypes-WQ7HQ4OGCNYN7PCTVTDTP9HL.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_Builtin_inttypes-WQ7HQ4OGCNYN7PCTVTDTP9HL.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Darwin-2QVAQ6LZXFT7DXLJZ1M8RAZMQ.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Darwin-2QVAQ6LZXFT7DXLJZ1M8RAZMQ.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Darwin-1Y231B2DDWQ76KYPUJ3L0PAV9.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Darwin-1Y231B2DDWQ76KYPUJ3L0PAV9.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ObjectiveC-2FZADZ1A9OBJE0WG4JQZ0H841.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ObjectiveC-2FZADZ1A9OBJE0WG4JQZ0H841.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ObjectiveC-8M2AH29GH1OB9CGG14AD2XCKU.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ObjectiveC-8M2AH29GH1OB9CGG14AD2XCKU.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/os_object-2AYPU6HCB1WY3VA02D9GXZ0PC.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/os_object-2AYPU6HCB1WY3VA02D9GXZ0PC.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/os_object-32B78AFIL57TMZ6EEWHM5R21X.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/os_object-32B78AFIL57TMZ6EEWHM5R21X.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/os_workgroup-9QHCYUN9KRG6GJZBN4MMMAOT.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/os_workgroup-9QHCYUN9KRG6GJZBN4MMMAOT.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/os_workgroup-9FPQIBCPE3XCXVOBI8AFWFELF.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/os_workgroup-9FPQIBCPE3XCXVOBI8AFWFELF.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Dispatch-39MUDO1F12ADW991Y6M4LWEYV.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Dispatch-39MUDO1F12ADW991Y6M4LWEYV.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Dispatch-J7G9ITA05UUSSR1GN32JJZTF.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Dispatch-J7G9ITA05UUSSR1GN32JJZTF.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/XPC-5WX5H2E5CT1KZVZNTQISLWVT2.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/XPC-5WX5H2E5CT1KZVZNTQISLWVT2.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreFoundation-EPURU88NLBI4A23LFCQFQP5A3.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreFoundation-EPURU88NLBI4A23LFCQFQP5A3.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreFoundation-DFCDHGHB9D64CL99BODP30G2W.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreFoundation-DFCDHGHB9D64CL99BODP30G2W.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/XPC-8NWUF7G8ZKCUA6TFNGOX44A7W.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/XPC-8NWUF7G8ZKCUA6TFNGOX44A7W.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CFNetwork-2P07CRGAEY7PQZ0RFXY45ELW5.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CFNetwork-2P07CRGAEY7PQZ0RFXY45ELW5.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreGraphics-97YH3OQBH9S9EVCD6IKKGJTAV.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreGraphics-97YH3OQBH9S9EVCD6IKKGJTAV.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Security-5M8H97TPDGD8MS8POIVDYZ1UP.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Security-5M8H97TPDGD8MS8POIVDYZ1UP.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Security-4CIY5EV2QVZDAVB3R90MJ65F8.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Security-4CIY5EV2QVZDAVB3R90MJ65F8.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreGraphics-30CR2Q75HLWGTHBPHUSYTQ5CP.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreGraphics-30CR2Q75HLWGTHBPHUSYTQ5CP.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ImageIO-1YS5812OANFOHQI4DZYCS0XPH.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ImageIO-1YS5812OANFOHQI4DZYCS0XPH.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Foundation-EYTGTHGV40A4O7747FHGLY2LS.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Foundation-EYTGTHGV40A4O7747FHGLY2LS.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreText-18T27NRUQOOC50HHS7G3ELPOK.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreText-18T27NRUQOOC50HHS7G3ELPOK.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CFNetwork-C28HFCJ5RO9O9E5J5VYFS6L26.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CFNetwork-C28HFCJ5RO9O9E5J5VYFS6L26.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ImageIO-82BEDHZ19XAE7MP950CFZCSND.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/ImageIO-82BEDHZ19XAE7MP950CFZCSND.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreText-ELLJC32YM1JMDVWT3YZOKIDAR.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreText-ELLJC32YM1JMDVWT3YZOKIDAR.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Foundation-37I5OLJPWT2CG9SSMOU5IST94.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Foundation-37I5OLJPWT2CG9SSMOU5IST94.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UserNotifications-54HQILHKSN11BNRQ75JD8CZ9P.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UserNotifications-54HQILHKSN11BNRQ75JD8CZ9P.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/IOSurface-BNTQNTEUPB76NKSWNXV2OG34O.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/IOSurface-BNTQNTEUPB76NKSWNXV2OG34O.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/OpenGLES-EJX9B6V8DOKSLYLIT8GXC4EM7.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/OpenGLES-EJX9B6V8DOKSLYLIT8GXC4EM7.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Metal-TNUHHVWH6W8ZCDT57JIQNXC.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Metal-TNUHHVWH6W8ZCDT57JIQNXC.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UIUtilities-7ICOZ9UUB0WEWECDSDNTSPT1R.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UIUtilities-7ICOZ9UUB0WEWECDSDNTSPT1R.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_LocationEssentials-3XKTO12Q0S83YTDJX5XOVJKUA.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_LocationEssentials-3XKTO12Q0S83YTDJX5XOVJKUA.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Symbols-AACUODK84KF9WD60K2CIQ27SW.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Symbols-AACUODK84KF9WD60K2CIQ27SW.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreLocation-2FWI3S9IIBO52YWITWO5D6JFD.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreLocation-2FWI3S9IIBO52YWITWO5D6JFD.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UserNotifications-EBUD947KQWHI9LP7BJO37DH7G.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UserNotifications-EBUD947KQWHI9LP7BJO37DH7G.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreVideo-2Z53X49ETKAHDOPCET63Y124N.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreVideo-2Z53X49ETKAHDOPCET63Y124N.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Symbols-85MG0SUI5QLP0K89K396DBRGM.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Symbols-85MG0SUI5QLP0K89K396DBRGM.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UIUtilities-CS9LZ8TBDSFSUX66J5RTUDITA.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UIUtilities-CS9LZ8TBDSFSUX66J5RTUDITA.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/IOSurface-372T4G0YFHNYSNKVE66JLB5E3.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/IOSurface-372T4G0YFHNYSNKVE66JLB5E3.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/OpenGLES-37SA2H4RL1QZ21DHL2M194F47.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/OpenGLES-37SA2H4RL1QZ21DHL2M194F47.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_LocationEssentials-6MZG7BWRFAEO0BJ2N4NU3KVZ4.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/_LocationEssentials-6MZG7BWRFAEO0BJ2N4NU3KVZ4.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreImage-CT0AX87C1EI3OCMQJ5TXBWRHX.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreImage-CT0AX87C1EI3OCMQJ5TXBWRHX.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Metal-6ZTKHADE364QDUE5UIZ6Y8FWK.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/Metal-6ZTKHADE364QDUE5UIZ6Y8FWK.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreLocation-8KW67W7ZR2IPXMTHL042ZICE4.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreLocation-8KW67W7ZR2IPXMTHL042ZICE4.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/QuartzCore-BG144MI9ZI7I8605G8VFB8LJV.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/QuartzCore-BG144MI9ZI7I8605G8VFB8LJV.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreVideo-CGGCCSAAM1AP0QHW3HQXQPPIQ.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreVideo-CGGCCSAAM1AP0QHW3HQXQPPIQ.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UIKit-9TKUDKHGINVPQDWOER4UXEQHU.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UIKit-9TKUDKHGINVPQDWOER4UXEQHU.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreImage-C9DNZ4TMTVFCNPXWPIN283UNQ.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/CoreImage-C9DNZ4TMTVFCNPXWPIN283UNQ.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/QuartzCore-BYG7OG3LCJLFH96ZPV06JW9VA.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/QuartzCore-BYG7OG3LCJLFH96ZPV06JW9VA.scan
+
+PrecompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UIKit-A57IRHPY9N5YK28MAVNPYQT0N.scan
+    cd /
+    builtin-precompileModule /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules/UIKit-A57IRHPY9N5YK28MAVNPYQT0N.scan
+
+CompileC /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/main.o /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    
+    Using response file: /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/SDKStatCaches.noindex/appletvsimulator27.0-24J360-e829b21a6f8c9b70876ba0858053c044bb2bd2b57661a85655e5049b1894cd48.sdkstatcache -target x86_64-apple-tvos17.0-simulator -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability @/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/main.dia -c /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/main.m -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/main.o
+
+CompileC /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/BrowserViewController.o /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/BrowserViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    
+    Using response file: /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/SDKStatCaches.noindex/appletvsimulator27.0-24J360-e829b21a6f8c9b70876ba0858053c044bb2bd2b57661a85655e5049b1894cd48.sdkstatcache -target x86_64-apple-tvos17.0-simulator -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability @/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/BrowserViewController.d --serialize-diagnostics /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/BrowserViewController.dia -c /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/BrowserViewController.m -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/BrowserViewController.o
+
+CompileC /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/main.o /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/main.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    
+    Using response file: /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/SDKStatCaches.noindex/appletvsimulator27.0-24J360-e829b21a6f8c9b70876ba0858053c044bb2bd2b57661a85655e5049b1894cd48.sdkstatcache -target arm64-apple-tvos17.0-simulator -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability @/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/main.d --serialize-diagnostics /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/main.dia -c /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/main.m -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/main.o
+
+CompileC /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/BrowserViewController.o /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/BrowserViewController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    
+    Using response file: /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode/SDKStatCaches.noindex/appletvsimulator27.0-24J360-e829b21a6f8c9b70876ba0858053c044bb2bd2b57661a85655e5049b1894cd48.sdkstatcache -target arm64-apple-tvos17.0-simulator -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/var/folders/8p/_k6z10ns5959265g8cy9w14w0000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability @/Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/BrowserViewController.d --serialize-diagnostics /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/BrowserViewController.dia -c /Users/runner/work/tvbrowser/tvbrowser/TVBrowser/BrowserViewController.m -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/BrowserViewController.o
+
+Ld /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/Binary/TVBrowser normal x86_64 (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-tvos17.0-simulator -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/runner/work/tvbrowser/tvbrowser/build/EagerLinkingTBDs/Debug-appletvsimulator -L/Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator -F/Users/runner/work/tvbrowser/tvbrowser/build/EagerLinkingTBDs/Debug-appletvsimulator -F/Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator -filelist /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/TVBrowser.LinkFileList -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/TVBrowser_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/TVBrowser_dependency_info.dat -fobjc-arc -fobjc-link-runtime -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/Binary/TVBrowser
+
+Ld /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/Binary/TVBrowser normal arm64 (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-tvos17.0-simulator -isysroot /Applications/Xcode_27.1.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/runner/work/tvbrowser/tvbrowser/build/EagerLinkingTBDs/Debug-appletvsimulator -L/Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator -F/Users/runner/work/tvbrowser/tvbrowser/build/EagerLinkingTBDs/Debug-appletvsimulator -F/Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator -filelist /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/TVBrowser.LinkFileList -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/TVBrowser_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/TVBrowser_dependency_info.dat -fobjc-arc -fobjc-link-runtime -o /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/Binary/TVBrowser
+
+CreateUniversalBinary /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app/TVBrowser normal arm64\ x86_64 (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    /Applications/Xcode_27.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/arm64/Binary/TVBrowser /Users/runner/work/tvbrowser/tvbrowser/build/TVBrowser.build/Debug-appletvsimulator/TVBrowser.build/Objects-normal/x86_64/Binary/TVBrowser -output /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app/TVBrowser
+
+RegisterExecutionPolicyException /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    builtin-RegisterExecutionPolicyException /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app
+
+Validate /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    builtin-validationUtility /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app (in target 'TVBrowser' from project 'TVBrowser')
+    cd /Users/runner/work/tvbrowser/tvbrowser
+    /usr/bin/touch -c /Users/runner/work/tvbrowser/tvbrowser/build/Debug-appletvsimulator/TVBrowser.app
+
+PruneExplicitPrecompiledModules /Users/runner/work/tvbrowser/tvbrowser/build/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/runner/work/tvbrowser/tvbrowser/build/ExplicitPrecompiledModules
+
+warning: ONLY_ACTIVE_ARCH=YES requested with multiple ARCHS and no active architecture could be computed; building for all applicable architectures (in target 'TVBrowser' from project 'TVBrowser')
+** BUILD SUCCEEDED **
+
