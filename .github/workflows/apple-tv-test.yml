@@ -10,18 +10,21 @@ on:
 
 jobs:
   test:
-    runs-on: macos-26
+    name: Test (${{ matrix.image }})
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [xcode-27, macos-26]   # tvOS 27 bzw. tvOS 26
+    runs-on: ${{ matrix.image }}
     timeout-minutes: 45
 
     steps:
       - name: Code holen
         uses: actions/checkout@v4
 
-      - name: Neueste Xcode-Version wählen
+      - name: Xcode-Version anzeigen
         run: |
-          XCODE=$(ls -d /Applications/Xcode*.app | grep -vi beta | sort -V | tail -1)
-          echo "Verwende $XCODE"
-          sudo xcode-select -s "$XCODE"
+          xcode-select -p
           xcodebuild -version
           mkdir -p ergebnis
           xcodebuild -version > ergebnis/xcode-version.txt
@@ -84,5 +87,5 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: apple-tv-test
+          name: apple-tv-test-${{ matrix.image }}
           path: ergebnis
