@@ -31,12 +31,14 @@ jobs:
 
       - name: Für den Simulator kompilieren
         run: |
+          set -o pipefail
           xcodebuild -project TVBrowser.xcodeproj -target TVBrowser \
             -sdk appletvsimulator -configuration Debug \
             CODE_SIGNING_ALLOWED=NO SYMROOT="$PWD/build" build 2>&1 | tee ergebnis/build-simulator.log
 
       - name: Für ein echtes Apple TV kompilieren (ohne Signatur)
         run: |
+          set -o pipefail
           xcodebuild -project TVBrowser.xcodeproj -target TVBrowser \
             -sdk appletvos -configuration Debug \
             CODE_SIGNING_ALLOWED=NO SYMROOT="$PWD/build" build 2>&1 | tee ergebnis/build-device.log
@@ -51,14 +53,23 @@ jobs:
 
       - name: Im Simulator starten und Screenshots machen
         run: |
-          RUNTIME=$(xcrun simctl list runtimes | grep "tvOS" | grep -v unavailable | tail -1 \
-            | sed -E 's/.* - (com\.apple\.CoreSimulator\.SimRuntime\.tvOS[^ ]*).*/\1/')
-          DEVTYPE=$(xcrun simctl list devicetypes | grep "Apple TV 4K" | tail -1 \
-            | sed -E 's/.*\((com\.apple\.CoreSimulator\.SimDeviceType\.[^)]*)\).*/\1/')
-          echo "Runtime: $RUNTIME / Gerät: $DEVTYPE"
-
-          UDID=$(xcrun simctl create "Test-Apple-TV" "$DEVTYPE" "$RUNTIME")
-          xcrun simctl boot "$UDID"
+          # Ein vorhandenes, zur neuesten tvOS-Version passendes Apple TV suchen.
+          UDID=$(xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          devices = json.load(sys.stdin)["devices"]
+          runtimes = [k for k in devices if "tvOS" in k and devices[k]]
+          runtimes.sort(key=lambda k: [int(x) for x in k.split("tvOS-")[1].split("-")])
+          print(devices[runtimes[-1]][-1]["udid"] if runtimes else "")
+          ')
+          # Sonst selbst eines anlegen – mit dem ersten Modell, das passt.
+          if [ -z "$UDID" ]; then
+            RUNTIME=$(xcrun simctl list runtimes -j | python3 -c 'import json,sys; r=[x for x in json.load(sys.stdin)["runtimes"] if x["platform"]=="tvOS" and x["isAvailable"]]; print(r[-1]["identifier"])')
+            for DT in $(xcrun simctl list devicetypes -j | python3 -c 'import json,sys; print("\n".join(t["identifier"] for t in json.load(sys.stdin)["devicetypes"] if "Apple-TV" in t["identifier"]))' | tail -r); do
+              UDID=$(xcrun simctl create "Test-Apple-TV" "$DT" "$RUNTIME" 2>/dev/null) && break
+            done
+          fi
+          echo "Simulator:"; xcrun simctl list devices | grep "$UDID" | tee ergebnis/simulator.txt
+          xcrun simctl boot "$UDID" || true
           xcrun simctl bootstatus "$UDID" -b
 
           APP=$(find build -type d -name "TVBrowser.app" -path "*appletvsimulator*" | head -1)
