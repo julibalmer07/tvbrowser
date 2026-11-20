@@ -1,0 +1,88 @@
+# Baut den Browser auf einem Mac in der Cloud, startet ihn im
+# Apple-TV-Simulator und macht Screenshots. Ergebnis: unter "Actions"
+# den Lauf öffnen, ganz unten bei "Artifacts" die Datei "apple-tv-test" laden.
+
+name: Apple TV Test
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: macos-26
+    timeout-minutes: 45
+
+    steps:
+      - name: Code holen
+        uses: actions/checkout@v4
+
+      - name: Neueste Xcode-Version wählen
+        run: |
+          XCODE=$(ls -d /Applications/Xcode*.app | grep -vi beta | sort -V | tail -1)
+          echo "Verwende $XCODE"
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+          mkdir -p ergebnis
+          xcodebuild -version > ergebnis/xcode-version.txt
+
+      - name: Für den Simulator kompilieren
+        run: |
+          xcodebuild -project TVBrowser.xcodeproj -target TVBrowser \
+            -sdk appletvsimulator -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO SYMROOT="$PWD/build" build 2>&1 | tee ergebnis/build-simulator.log
+
+      - name: Für ein echtes Apple TV kompilieren (ohne Signatur)
+        run: |
+          xcodebuild -project TVBrowser.xcodeproj -target TVBrowser \
+            -sdk appletvos -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO SYMROOT="$PWD/build" build 2>&1 | tee ergebnis/build-device.log
+
+      - name: tvOS-Simulator bereitstellen
+        run: |
+          if ! xcrun simctl list runtimes | grep -q "tvOS"; then
+            echo "Kein tvOS-Simulator vorhanden – lade ihn herunter …"
+            xcodebuild -downloadPlatform tvOS
+          fi
+          xcrun simctl list runtimes | tee ergebnis/simulatoren.txt
+
+      - name: Im Simulator starten und Screenshots machen
+        run: |
+          RUNTIME=$(xcrun simctl list runtimes | grep "tvOS" | grep -v unavailable | tail -1 \
+            | sed -E 's/.* - (com\.apple\.CoreSimulator\.SimRuntime\.tvOS[^ ]*).*/\1/')
+          DEVTYPE=$(xcrun simctl list devicetypes | grep "Apple TV 4K" | tail -1 \
+            | sed -E 's/.*\((com\.apple\.CoreSimulator\.SimDeviceType\.[^)]*)\).*/\1/')
+          echo "Runtime: $RUNTIME / Gerät: $DEVTYPE"
+
+          UDID=$(xcrun simctl create "Test-Apple-TV" "$DEVTYPE" "$RUNTIME")
+          xcrun simctl boot "$UDID"
+          xcrun simctl bootstatus "$UDID" -b
+
+          APP=$(find build -type d -name "TVBrowser.app" -path "*appletvsimulator*" | head -1)
+          BUNDLE_ID=$(/usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' "$APP/Info.plist")
+          echo "App: $APP ($BUNDLE_ID)"
+
+          xcrun simctl install "$UDID" "$APP"
+          xcrun simctl launch "$UDID" "$BUNDLE_ID"
+
+          sleep 25
+          xcrun simctl io "$UDID" screenshot ergebnis/1-nach-25-sekunden.png
+          sleep 30
+          xcrun simctl io "$UDID" screenshot ergebnis/2-nach-55-sekunden.png
+
+          # Prüfen, ob die App noch läuft (nicht abgestürzt).
+          if xcrun simctl spawn "$UDID" launchctl list | grep -q "$BUNDLE_ID"; then
+            echo "App läuft noch ✅" | tee ergebnis/status.txt
+          else
+            echo "App läuft NICHT mehr ❌ (abgestürzt?)" | tee ergebnis/status.txt
+          fi
+
+          xcrun simctl spawn "$UDID" log show --last 3m --style compact \
+            --predicate 'process == "TVBrowser"' > ergebnis/app-log.txt || true
+
+      - name: Ergebnis hochladen
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: apple-tv-test
+          path: ergebnis
