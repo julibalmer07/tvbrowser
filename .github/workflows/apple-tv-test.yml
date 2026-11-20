@@ -8,6 +8,9 @@ on:
   push:
   workflow_dispatch:
 
+permissions:
+  contents: write   # erlaubt dem Test, die Ergebnisse in einen eigenen Branch zu legen
+
 jobs:
   test:
     name: Test (${{ matrix.image }})
@@ -100,3 +103,15 @@ jobs:
         with:
           name: apple-tv-test-${{ matrix.image }}
           path: ergebnis
+
+      - name: Ergebnis in Branch "testergebnisse-${{ matrix.image }}" ablegen
+        if: always()
+        run: |
+          cd ergebnis
+          git init -q -b results
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Testergebnis ${{ matrix.image }} (${{ github.sha }})"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" \
+            HEAD:"testergebnisse-${{ matrix.image }}"
